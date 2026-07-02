@@ -1,0 +1,34 @@
+@keyframes creator-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.creator-hero-animate {
+  opacity: 0;
+  animation: creator-fade-up 0.8s ease forwards;
+}
+
+.creator-delay-1 {
+  animation-delay: 150ms;
+}
+
+.creator-delay-2 {
+  animation-delay: 300ms;
+}
+
+.creator-fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.creator-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

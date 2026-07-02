@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useLanguage } from "./LanguageContext";
+import { scrollToSection } from "@/lib/scrollToSection";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -45,7 +46,11 @@ export default function Hero() {
       </div>
 
       <div className="flex items-end justify-between pt-4 text-[13px] uppercase tracking-widest text-secondary">
-        <a href="#about" className="transition-colors hover:text-primary">
+        <a
+          href="#about"
+          onClick={(e) => scrollToSection(e, "about")}
+          className="transition-colors hover:text-primary"
+        >
           {t.hero.scroll}
         </a>
         <span>2026</span>

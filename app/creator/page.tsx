@@ -47,7 +47,7 @@ async function getLatestVideo() {
 }
 
 const pillClasses =
-  "group flex items-center gap-4 rounded-2xl border border-[#D4A853]/40 bg-[#1A1A1A] p-4 transition-all duration-200 hover:border-[#D4A853] active:scale-95";
+  "group flex items-center gap-4 rounded-2xl border border-[#E8752B]/40 bg-[#1A1A1A] p-4 transition-all duration-200 hover:border-[#E8752B] active:scale-95";
 
 function YouTubeIcon() {
   return (
@@ -59,7 +59,7 @@ function YouTubeIcon() {
 
 function PlayIcon({
   className = "h-5 w-5",
-  fill = "#D4A853",
+  fill = "#E8752B",
 }: {
   className?: string;
   fill?: string;
@@ -91,7 +91,7 @@ function InstagramIcon() {
 }
 
 function ArrowIcon() {
-  return <span className="text-[#D4A853]">↗</span>;
+  return <span className="text-[#E8752B]">↗</span>;
 }
 
 export default async function CreatorPage() {
@@ -118,7 +118,7 @@ export default async function CreatorPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#0D0D0D]" />
 
         <div className="relative flex flex-col gap-3 px-6 md:px-10">
-          <span className="creator-hero-animate text-sm font-semibold uppercase tracking-[0.3em] text-[#D4A853]">
+          <span className="creator-hero-animate text-sm font-bold uppercase tracking-[0.3em] text-[#E8752B]">
             VIVIENDO MI VIDA
           </span>
           <h1 className="creator-hero-animate creator-delay-1 text-5xl font-black leading-none text-white md:text-7xl">
@@ -133,7 +133,7 @@ export default async function CreatorPage() {
           <div className="flex flex-col gap-4">
             <CreatorFadeIn>
               <a
-                href="https://youtube.com/@marcosdurayt"
+                href="https://youtube.com/@marcosdura"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={pillClasses}
@@ -151,37 +151,6 @@ export default async function CreatorPage() {
                 <div className="flex flex-shrink-0 items-center gap-2">
                   <YouTubeIcon />
                   <ArrowIcon />
-                </div>
-              </a>
-            </CreatorFadeIn>
-
-            <CreatorFadeIn delay={80}>
-              <a
-                href={video?.videoUrl ?? "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={pillClasses}
-              >
-                <div className="relative aspect-video w-16 flex-shrink-0 overflow-hidden rounded-lg bg-zinc-700">
-                  <div className="absolute inset-0 flex items-center justify-center text-center text-[6px] uppercase leading-tight text-zinc-400">
-                    video thumb
-                  </div>
-                  <Image
-                    src={video?.thumbnail ?? "/creator/latest-thumb.jpg"}
-                    alt="Último video"
-                    fill
-                    sizes="64px"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex min-w-0 flex-1 flex-col gap-0.5">
-                  <span className="text-xs uppercase tracking-wide text-[#6B6B6B]">Último video</span>
-                  <span className="line-clamp-1 text-sm font-medium text-white">
-                    {video?.title ?? "Nombre del video aquí"}
-                  </span>
-                </div>
-                <div className="flex-shrink-0">
-                  <PlayIcon />
                 </div>
               </a>
             </CreatorFadeIn>
@@ -213,7 +182,7 @@ export default async function CreatorPage() {
               href={video?.videoUrl ?? "#latest-video"}
               target="_blank"
               rel="noopener noreferrer"
-              className="block overflow-hidden rounded-2xl bg-[#1A1A1A]"
+              className="group block overflow-hidden rounded-2xl bg-[#1A1A1A] transition-colors duration-200 hover:bg-[#242424]"
             >
               <div className="relative aspect-video w-full">
                 <div className="absolute inset-0 flex items-center justify-center bg-zinc-800 text-center text-xs uppercase tracking-widest text-zinc-500">
@@ -227,7 +196,7 @@ export default async function CreatorPage() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-black/50">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-black/50 transition-all duration-200 group-hover:scale-110 group-hover:bg-black/70">
                     <PlayIcon className="h-6 w-6 translate-x-0.5" fill="white" />
                   </div>
                 </div>
@@ -236,7 +205,7 @@ export default async function CreatorPage() {
               <div className="p-4">
                 <p className="font-semibold text-white">{video?.title ?? "Nombre del video aquí"}</p>
                 <p className="mt-1 text-sm text-[#6B6B6B]">@marcosdurayt · YouTube</p>
-                <span className="mt-3 block w-full rounded-xl bg-[#D4A853] py-3 text-center font-bold text-black">
+                <span className="mt-3 block w-full rounded-xl bg-[#E8752B] py-3 text-center font-bold text-black transition-colors duration-200 group-hover:bg-[#F0954C]">
                   Ver en YouTube ↗
                 </span>
               </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useLanguage } from "./LanguageContext";
+import { scrollToSection } from "@/lib/scrollToSection";
 
 const sectionIds = ["about", "portfolio", "stack", "contact"];
 
@@ -54,13 +55,17 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-primary/10 bg-white/90 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-[1680px] items-center justify-between px-6 py-4 md:px-10">
-        <a href="#top" className="opacity-100 transition-opacity hover:opacity-60">
+        <a
+          href="#top"
+          onClick={(e) => scrollToSection(e, "top")}
+          className="relative block h-8 w-8 overflow-hidden rounded-[22%] opacity-100 transition-opacity hover:opacity-60"
+        >
           <Image
             src="/logo-md.png"
             alt="MD"
-            width={32}
-            height={32}
-            className="h-8 w-8 mix-blend-multiply"
+            fill
+            sizes="32px"
+            className="scale-110 object-cover mix-blend-multiply"
             priority
           />
         </a>
@@ -71,6 +76,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={(e) => scrollToSection(e, link.id)}
                 className={`text-[13px] font-semibold uppercase tracking-wider ${
                   activeSection === link.id ? activeNavPill : inactiveNavPill
                 }`}

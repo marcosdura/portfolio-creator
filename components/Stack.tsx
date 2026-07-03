@@ -9,7 +9,7 @@ export default function Stack() {
   return (
     <section
       id="stack"
-      className="flex w-full flex-col justify-center border-t border-primary/10 px-6 py-8 md:px-10 lg:h-[100svh] lg:snap-start lg:overflow-hidden"
+      className="flex w-full flex-col justify-center border-t border-primary/10 px-6 py-8 max-md:py-20 md:px-10 lg:h-[100svh] lg:snap-start lg:overflow-hidden"
     >
       <div className="mx-auto w-full max-w-7xl">
         <FadeIn>

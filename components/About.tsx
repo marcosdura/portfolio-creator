@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex w-full flex-col justify-center border-t border-primary/10 px-6 py-12 md:px-10 lg:h-[100svh] lg:snap-start lg:overflow-hidden"
+      className="flex w-full flex-col justify-center border-t border-primary/10 px-6 py-12 max-md:py-24 md:px-10 lg:h-[100svh] lg:snap-start lg:overflow-hidden"
     >
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 lg:grid-cols-[1fr_2fr] lg:gap-16">
         <FadeIn>

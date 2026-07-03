@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex w-full flex-col border-t border-primary/10 px-6 py-8 text-center md:px-10 lg:h-[100svh] lg:snap-start lg:overflow-hidden"
+      className="flex w-full flex-col border-t border-primary/10 px-6 py-8 max-md:py-20 text-center md:px-10 lg:h-[100svh] lg:snap-start lg:overflow-hidden"
     >
       <div className="mx-auto flex flex-1 max-w-3xl flex-col items-center justify-center gap-4 lg:gap-6">
         <FadeIn>
@@ -88,7 +88,7 @@ export default function Contact() {
         </FadeIn>
       </div>
 
-      <div className="mt-6 border-t border-primary/10 pt-4">
+      <div className="mt-6 max-md:mt-12 border-t border-primary/10 pt-4 max-md:pt-6">
         <div className="mx-auto flex max-w-[1680px] flex-col items-center gap-3 md:flex-row md:justify-between">
           <div className="flex flex-wrap items-center justify-center gap-6">
             <a

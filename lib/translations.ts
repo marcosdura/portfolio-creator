@@ -24,6 +24,7 @@ export type Translations = {
   portfolio: {
     label: string;
     viewProject: string;
+    stillInDevelopment: string;
     projects: {
       name: string;
       description: string;
@@ -77,6 +78,7 @@ export const translations: Record<Lang, Translations> = {
     portfolio: {
       label: "Selected Projects",
       viewProject: "View project ↗",
+      stillInDevelopment: "Still in development",
       projects: [
         {
           name: "Rumbo",
@@ -150,6 +152,7 @@ export const translations: Record<Lang, Translations> = {
     portfolio: {
       label: "Proyectos Seleccionados",
       viewProject: "Ver proyecto ↗",
+      stillInDevelopment: "Todavía está en desarrollo",
       projects: [
         {
           name: "Rumbo",

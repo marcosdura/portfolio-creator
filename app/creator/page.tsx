@@ -175,7 +175,7 @@ export default async function CreatorPage() {
           </div>
         </div>
 
-        <div className="mx-auto mt-4 max-w-2xl">
+        <div className="mx-auto mt-7 mb-9 max-w-2xl">
           <CreatorFadeIn delay={240}>
             <h2 className="mb-3 text-2xl font-bold text-white">Último video</h2>
             <a
@@ -213,6 +213,7 @@ export default async function CreatorPage() {
           </CreatorFadeIn>
         </div>
 
+        
         <div className="mx-auto mt-4 max-w-lg">
           <div className="flex flex-col gap-4">
             <CreatorFadeIn delay={320}>
@@ -230,6 +231,7 @@ export default async function CreatorPage() {
               </Link>
             </CreatorFadeIn>
 
+            {/*
             <CreatorFadeIn delay={400}>
               <a
                 href="https://rumboapp.uy"
@@ -249,6 +251,7 @@ export default async function CreatorPage() {
                 </div>
               </a>
             </CreatorFadeIn>
+            */}
           </div>
         </div>
       </section>

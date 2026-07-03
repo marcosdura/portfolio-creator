@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./creator.css";
+import BodyBackground from "./BodyBackground";
 
 export const metadata: Metadata = {
   title: "Marcos Dura | Contenido",
@@ -7,5 +8,10 @@ export const metadata: Metadata = {
 };
 
 export default function CreatorLayout({ children }: { children: React.ReactNode }) {
-  return <div className="min-h-screen bg-[#0D0D0D]">{children}</div>;
+  return (
+    <>
+      <BodyBackground />
+      <div className="min-h-screen bg-[#0D0D0D]">{children}</div>
+    </>
+  );
 }

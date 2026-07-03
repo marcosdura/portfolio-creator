@@ -116,6 +116,7 @@ export default async function CreatorPage() {
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#0D0D0D]" />
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0D0D0D] to-transparent md:h-32" />
 
         <div className="relative flex flex-col gap-3 px-6 md:px-10">
           <span className="creator-hero-animate text-sm font-bold uppercase tracking-[0.3em] text-[#E8752B]">

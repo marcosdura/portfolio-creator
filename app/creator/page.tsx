@@ -147,7 +147,7 @@ export default async function CreatorPage() {
                 </div>
                 <div className="flex min-w-0 flex-1 flex-col gap-0.5">
                   <span className="text-xs uppercase tracking-wide text-[#6B6B6B]">Canal de YouTube</span>
-                  <span className="text-base font-semibold text-white">@marcosdurayt</span>
+                  <span className="text-base font-semibold text-white">@marcosdura</span>
                 </div>
                 <div className="flex flex-shrink-0 items-center gap-2">
                   <YouTubeIcon />

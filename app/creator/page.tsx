@@ -234,7 +234,7 @@ export default async function CreatorPage() {
             {/*
             <CreatorFadeIn delay={400}>
               <a
-                href="https://rumboapp.uy"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className={pillClasses}

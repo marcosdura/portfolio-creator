@@ -6,7 +6,7 @@ import FadeIn from "./FadeIn";
 import { useLanguage } from "./LanguageContext";
 
 const projectLinks: { href: string; image: string | null; inDevelopment?: boolean }[] = [
-  { href: "https://rumboapp.uy", image: "/project-rumbo.png", inDevelopment: true },
+  { href: "", image: "/project-rumbo.png", inDevelopment: true },
   { href: "#", image: null },
   { href: "#", image: null },
 ];

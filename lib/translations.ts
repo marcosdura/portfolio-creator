@@ -138,53 +138,18 @@ export const translations: Record<Lang, Translations> = {
             "Personal analytics platform with AI-powered content analysis.",
           stack: ["Next.js", "FastAPI", "Anthropic API"],
           modal: {
-            subtitle:
-              "Instagram analytics dashboard built with Next.js 14, FastAPI, and SQLite. Static demo version with real data from @marcosdurayt, snapshot from July 2026.",
+            status: "Portfolio demo — some features are disabled or simulated",
             sections: [
               {
                 heading: "What is this?",
                 blocks: [
                   {
                     type: "paragraph",
-                    text: "A full-stack web app that consumes the Instagram Graph API to pull detailed metrics for posts and reels: reach, plays, engagement, audience by age/gender/location, and more.",
+                    text: "A full-stack analytics dashboard that consumes the Instagram Graph API to pull detailed metrics for posts and reels: reach, plays, engagement, audience by age/gender/location, and more. It includes a built-in AI assistant that analyzes the account's content and generates strategy suggestions based on real metrics.",
                   },
                   {
                     type: "paragraph",
-                    text: "The project includes a built-in AI assistant that analyzes the account's content and generates strategy suggestions based on real metrics.",
-                  },
-                ],
-              },
-              {
-                heading: "Why are some features disabled?",
-                blocks: [
-                  {
-                    type: "paragraph",
-                    text: "This is a portfolio demo — the backend isn't deployed, to avoid exposing Instagram credentials or generating API costs.",
-                  },
-                  {
-                    type: "table",
-                    rows: [
-                      {
-                        label: "Instagram sync",
-                        status: "Disabled",
-                        note: "Requires an Instagram Graph API token",
-                      },
-                      {
-                        label: "AI chat",
-                        status: "Simulated",
-                        note: "Avoids Anthropic API costs",
-                      },
-                      {
-                        label: "Transcriptions",
-                        status: "Disabled",
-                        note: "Requires a Supadata API key",
-                      },
-                      {
-                        label: "Data",
-                        status: "Real snapshot",
-                        note: "Hardcoded as of July 8, 2026",
-                      },
-                    ],
+                    text: "This is a static demo with real data from @marcosdurayt (snapshot from July 2026). The backend isn't deployed, to avoid exposing Instagram credentials or generating API costs — so Instagram sync and transcriptions are disabled, and the AI chat is simulated.",
                   },
                 ],
               },
@@ -192,48 +157,8 @@ export const translations: Record<Lang, Translations> = {
                 heading: "Stack",
                 blocks: [
                   {
-                    type: "keyValue",
-                    items: [
-                      { label: "Frontend", value: "Next.js 14 (App Router), Tailwind CSS" },
-                      { label: "Backend", value: "FastAPI, SQLAlchemy, APScheduler, httpx" },
-                      { label: "Database", value: "SQLite" },
-                      { label: "AI", value: "Anthropic API (claude-sonnet) for the strategy chat" },
-                      { label: "Transcriptions", value: "Supadata API" },
-                      { label: "Data", value: "Instagram Graph API v22.0" },
-                    ],
-                  },
-                ],
-              },
-              {
-                heading: "Pages",
-                blocks: [
-                  {
-                    type: "list",
-                    items: [
-                      {
-                        title: "Dashboard",
-                        description:
-                          "General metrics, reach chart, top viral content, engagement benchmarks by follower range",
-                      },
-                      {
-                        title: "Content",
-                        description:
-                          "Grid of posts and reels with filters, sorting, and a detail panel",
-                      },
-                      {
-                        title: "Audience",
-                        description:
-                          "Distribution by age, gender, cities, and hourly activity heatmap",
-                      },
-                      {
-                        title: "Strategy",
-                        description: "Drag & drop kanban to organize content ideas",
-                      },
-                      {
-                        title: "Ideas",
-                        description: "AI chat using transcriptions and metrics as context",
-                      },
-                    ],
+                    type: "badges",
+                    items: ["Next.js 14", "FastAPI", "SQLite", "Anthropic API", "Supadata API", "Tailwind CSS"],
                   },
                 ],
               },
@@ -364,53 +289,18 @@ export const translations: Record<Lang, Translations> = {
             "Plataforma personal de analítica con análisis de contenido potenciado por IA.",
           stack: ["Next.js", "FastAPI", "Anthropic API"],
           modal: {
-            subtitle:
-              "Dashboard de analytics para Instagram construido con Next.js 14, FastAPI y SQLite. Versión demo estática con datos reales de @marcosdurayt, snapshot de julio 2026.",
+            status: "Demo de portfolio — algunas funciones están deshabilitadas o simuladas",
             sections: [
               {
                 heading: "¿Qué es esto?",
                 blocks: [
                   {
                     type: "paragraph",
-                    text: "Una aplicación web full-stack que consume la Instagram Graph API para obtener métricas detalladas de posts y reels: alcance, reproducciones, engagement, audiencia por edad/género/ubicación, y más.",
+                    text: "Un dashboard de analytics full-stack que consume la Instagram Graph API para obtener métricas detalladas de posts y reels: alcance, reproducciones, engagement, audiencia por edad/género/ubicación, y más. Incluye un asistente de IA integrado que analiza el contenido de la cuenta y genera sugerencias de estrategia basadas en métricas reales.",
                   },
                   {
                     type: "paragraph",
-                    text: "El proyecto incluye un asistente de IA integrado que analiza el contenido de la cuenta y genera sugerencias de estrategia basadas en las métricas reales.",
-                  },
-                ],
-              },
-              {
-                heading: "¿Por qué algunas funciones están deshabilitadas?",
-                blocks: [
-                  {
-                    type: "paragraph",
-                    text: "Esta es una demo de portfolio — el backend no está deployado para no exponer credenciales de Instagram ni generar costos de API.",
-                  },
-                  {
-                    type: "table",
-                    rows: [
-                      {
-                        label: "Sync de Instagram",
-                        status: "Deshabilitado",
-                        note: "Requiere token de Instagram Graph API",
-                      },
-                      {
-                        label: "Chat con IA",
-                        status: "Simulado",
-                        note: "Evitar costos de Anthropic API",
-                      },
-                      {
-                        label: "Transcripciones",
-                        status: "Deshabilitado",
-                        note: "Requiere Supadata API key",
-                      },
-                      {
-                        label: "Datos",
-                        status: "Snapshot real",
-                        note: "Hardcodeados al 8 de julio de 2026",
-                      },
-                    ],
+                    text: "Esta es una demo estática con datos reales de @marcosdurayt (snapshot de julio 2026). El backend no está deployado para no exponer credenciales de Instagram ni generar costos de API — por eso el sync de Instagram y las transcripciones están deshabilitados, y el chat con IA está simulado.",
                   },
                 ],
               },
@@ -418,48 +308,8 @@ export const translations: Record<Lang, Translations> = {
                 heading: "Stack",
                 blocks: [
                   {
-                    type: "keyValue",
-                    items: [
-                      { label: "Frontend", value: "Next.js 14 (App Router), Tailwind CSS" },
-                      { label: "Backend", value: "FastAPI, SQLAlchemy, APScheduler, httpx" },
-                      { label: "Base de datos", value: "SQLite" },
-                      { label: "IA", value: "Anthropic API (claude-sonnet) para el chat de estrategia" },
-                      { label: "Transcripciones", value: "Supadata API" },
-                      { label: "Datos", value: "Instagram Graph API v22.0" },
-                    ],
-                  },
-                ],
-              },
-              {
-                heading: "Páginas",
-                blocks: [
-                  {
-                    type: "list",
-                    items: [
-                      {
-                        title: "Dashboard",
-                        description:
-                          "Métricas generales, gráfico de reach, top contenidos virales, benchmarks de engagement por rango de seguidores",
-                      },
-                      {
-                        title: "Contenido",
-                        description:
-                          "Grid de posts y reels con filtros, ordenamiento y panel de detalle",
-                      },
-                      {
-                        title: "Audiencia",
-                        description:
-                          "Distribución por edad, género, ciudades y heatmap de actividad horaria",
-                      },
-                      {
-                        title: "Estrategia",
-                        description: "Kanban con drag & drop para organizar ideas de contenido",
-                      },
-                      {
-                        title: "Ideas",
-                        description: "Chat con IA usando transcripciones y métricas como contexto",
-                      },
-                    ],
+                    type: "badges",
+                    items: ["Next.js 14", "FastAPI", "SQLite", "Anthropic API", "Supadata API", "Tailwind CSS"],
                   },
                 ],
               },

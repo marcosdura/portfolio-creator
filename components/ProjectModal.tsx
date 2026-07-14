@@ -195,7 +195,7 @@ export default function ProjectModal({
                   href={content.link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit text-sm font-semibold text-primary underline-offset-4 hover:underline lg:text-base"
+                  className="w-fit text-sm font-semibold text-blue-600 underline underline-offset-4 transition-colors hover:text-blue-700 lg:text-base"
                 >
                   {content.link.label}
                 </a>

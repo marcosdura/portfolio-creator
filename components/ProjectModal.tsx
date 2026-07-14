@@ -190,6 +190,16 @@ export default function ProjectModal({
                   {content.subtitle}
                 </p>
               )}
+              {content.link && (
+                <a
+                  href={content.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-fit text-sm font-semibold text-primary underline-offset-4 hover:underline lg:text-base"
+                >
+                  {content.link.label}
+                </a>
+              )}
             </div>
 
             {content.sections.map((section) => (

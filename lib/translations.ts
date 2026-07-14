@@ -16,6 +16,7 @@ export type ProjectModalSection = {
 export type ProjectModalContent = {
   subtitle?: string;
   status?: string;
+  link?: { label: string; href: string };
   sections: ProjectModalSection[];
 };
 
@@ -136,20 +137,21 @@ export const translations: Record<Lang, Translations> = {
           name: "Instagram Analytics Dashboard",
           description:
             "Personal analytics platform with AI-powered content analysis.",
-          stack: ["Next.js", "FastAPI", "Anthropic API"],
+          stack: ["Next.js", "FastAPI", "OpenAI API"],
           modal: {
             status: "Portfolio demo — some features are disabled or simulated",
+            link: { label: "View demo ↗", href: "https://instagram-analytics-static.vercel.app/" },
             sections: [
               {
-                heading: "What is this?",
+                heading: "What is it?",
                 blocks: [
                   {
                     type: "paragraph",
-                    text: "A full-stack analytics dashboard that consumes the Instagram Graph API to pull detailed metrics for posts and reels: reach, plays, engagement, audience by age/gender/location, and more. It includes a built-in AI assistant that analyzes the account's content and generates strategy suggestions based on real metrics.",
+                    text: "A full-stack analytics dashboard for Instagram: reach, engagement, audience breakdown, and an AI assistant that suggests content strategy.",
                   },
                   {
                     type: "paragraph",
-                    text: "This is a static demo with real data from @marcosdurayt (snapshot from July 2026). The backend isn't deployed, to avoid exposing Instagram credentials or generating API costs — so Instagram sync and transcriptions are disabled, and the AI chat is simulated.",
+                    text: "This is a static demo with real data from @marcosdurayt, snapshot from July 2026.",
                   },
                 ],
               },
@@ -158,7 +160,7 @@ export const translations: Record<Lang, Translations> = {
                 blocks: [
                   {
                     type: "badges",
-                    items: ["Next.js 14", "FastAPI", "SQLite", "Anthropic API", "Supadata API", "Tailwind CSS"],
+                    items: ["Next.js 14", "FastAPI", "SQLite", "OpenAI API", "Supadata API", "Tailwind CSS"],
                   },
                 ],
               },
@@ -208,7 +210,7 @@ export const translations: Record<Lang, Translations> = {
         },
         {
           label: "Tools",
-          tools: ["Cursor", "GitHub Copilot", "Vercel", "Railway", "Cloudinary"],
+          tools: ["Claude Code", "Vercel", "Railway", "Cloudinary"],
         },
       ],
     },
@@ -287,20 +289,21 @@ export const translations: Record<Lang, Translations> = {
           name: "Instagram Analytics Dashboard",
           description:
             "Plataforma personal de analítica con análisis de contenido potenciado por IA.",
-          stack: ["Next.js", "FastAPI", "Anthropic API"],
+          stack: ["Next.js", "FastAPI", "OpenAI API"],
           modal: {
             status: "Demo de portfolio — algunas funciones están deshabilitadas o simuladas",
+            link: { label: "Ver demo ↗", href: "https://instagram-analytics-static.vercel.app/" },
             sections: [
               {
-                heading: "¿Qué es esto?",
+                heading: "¿Qué es?",
                 blocks: [
                   {
                     type: "paragraph",
-                    text: "Un dashboard de analytics full-stack que consume la Instagram Graph API para obtener métricas detalladas de posts y reels: alcance, reproducciones, engagement, audiencia por edad/género/ubicación, y más. Incluye un asistente de IA integrado que analiza el contenido de la cuenta y genera sugerencias de estrategia basadas en métricas reales.",
+                    text: "Un dashboard de analytics full-stack para Instagram: alcance, engagement, desglose de audiencia y un asistente de IA que sugiere estrategia de contenido.",
                   },
                   {
                     type: "paragraph",
-                    text: "Esta es una demo estática con datos reales de @marcosdurayt (snapshot de julio 2026). El backend no está deployado para no exponer credenciales de Instagram ni generar costos de API — por eso el sync de Instagram y las transcripciones están deshabilitados, y el chat con IA está simulado.",
+                    text: "Esta es una demo estática con datos reales de @marcosdurayt, snapshot de julio 2026.",
                   },
                 ],
               },
@@ -309,7 +312,7 @@ export const translations: Record<Lang, Translations> = {
                 blocks: [
                   {
                     type: "badges",
-                    items: ["Next.js 14", "FastAPI", "SQLite", "Anthropic API", "Supadata API", "Tailwind CSS"],
+                    items: ["Next.js 14", "FastAPI", "SQLite", "OpenAI API", "Supadata API", "Tailwind CSS"],
                   },
                 ],
               },
@@ -360,7 +363,7 @@ export const translations: Record<Lang, Translations> = {
         },
         {
           label: "Herramientas",
-          tools: ["Cursor", "GitHub Copilot", "Vercel", "Railway", "Cloudinary"],
+          tools: ["Claude Code", "Vercel", "Railway", "Cloudinary"],
         },
       ],
     },
